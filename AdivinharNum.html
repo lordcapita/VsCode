@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo JavaScript</title> 
+        <script>
+            var numeroPensado = Math.round(Math.random() * 5);
+            var tentativa = 1;
+
+            while (tentativa <= 3) {
+                var numeroDigitado = prompt ("Gigite o número:");
+                console.log ("numeroDigitado", numeroDigitado);
+
+                if (numeroPensado == numeroDigitado) {
+                    console.log ("Números Iguais:", numeroPensado, numeroDigitado );
+                    alert('Acertou');
+                    break;
+
+                }else {
+                    console.log ("Números Diferentes:", numeroPensado, numeroDigitado)
+                    alert('Errou');
+                }
+                tentativa++;
+
+            }
+        </script>
+        </head>
+<body
